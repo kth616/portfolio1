@@ -1,0 +1,137 @@
+.feature{
+    margin-top: 160px;
+
+    @include mq('sp'){
+        margin-top: 96px;
+    }
+}
+
+.feature__inner{
+}
+
+.feature-title{}
+
+.feature-items{
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq('tab'){
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+
+    @include mq('sp'){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.feature-item{
+    display: block;
+    width: calc(33% - 90px * 2 / 3);
+    box-shadow: 0 3px 3px rgba(#000 , 0.15);
+    transition: all 0.5s ease 0s;
+
+    &:hover{
+        transform: scale(1.1 , 1.1);
+    }
+
+    @include mq('pc'){
+        &:not(:nth-child(4n+1)){
+            margin-left: 90px;
+        }
+
+        &:nth-child(n+4){
+            margin-top: 40px;
+        }
+    }
+
+    @include mq('tab'){
+        width: calc(50% - 60px / 2);
+        max-width: 340px;
+        
+        &:not(:nth-child(2n+1)){
+            margin-left: 60px;
+        }
+
+        &:nth-child(n+3){
+            margin-top: 40px;
+        }
+    }
+
+    @include mq('sp'){
+        width: 100%;
+        
+        &:nth-child(n+2){
+            margin-top: 48px;
+        }
+    }
+
+
+}
+
+.feature-img{
+    display: block;
+
+    img{
+        width: 100%;
+    }
+}
+
+.feature-explanation{
+    line-height: calc(27/16);
+    font-weight: 700;
+    text-align: center;
+    padding: 32px 0;
+}
+
+
+.feature-contents{
+    margin-top: 160px;
+    background: url(../img/bg.png) no-repeat center center / cover;
+    height: 478px;
+    padding: 0;
+    position: relative;
+
+    @include mq('sp'){
+        background: url(../img/sp/bg.png) no-repeat center center / cover;
+    }
+}
+
+.feature-message{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+
+    @include mq('sp'){
+        padding: 15px;
+        left: 0;
+        top: 182px;
+        transform: none;
+    }
+}
+
+.feature-heading{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    line-height: calc(37/22);
+
+    @include mq('sp'){
+        font-size: 20px;
+    }
+}
+
+.feature-content{
+    width: 590px;
+    color: #fff;
+    line-height: calc(27/16);
+    margin-top: 40px;
+
+    @include mq('sp'){
+        width: 100%;
+        font-size: 14px;
+
+    }
+}

@@ -1,0 +1,253 @@
+.contact{
+    background: url(../img/contact.png) no-repeat center center / cover;
+    margin-top: 225px;
+    padding-top: 72px;
+    padding-bottom: 84px;
+
+    @include mq('sp'){
+        margin-top: 96px;
+        padding-top: 57px;
+        padding-bottom: 57px;
+    }
+}
+
+.contact-title{
+    color: $color-main;
+    margin-bottom: 64px;
+
+    @include mq('sp'){
+        margin-bottom: 33px;
+    }
+}
+
+.contact-message{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    font-weight: 700;
+
+    span{
+        color: #E7728E;
+    }
+
+}
+
+.contact__form{
+    max-width: 510px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.contact-form{}
+
+.contact-form__row{
+    display: flex;
+    
+    &:nth-child(n+2){
+        margin-top: 32px;
+    }
+
+    [type="text"],
+    [type="email"],
+    textarea{
+        width: 100%;
+        min-width: 320px;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 5px 6px 15px rgba(#000 , 0.16);
+        padding: .2em .5em;
+        
+    }
+
+    [type="text"],
+    [type="email"]{
+        height: 40px;
+        
+    }
+
+    textarea{
+        min-height: 122px;
+        resize: vertical;
+    }
+
+    @include mq('sp'){
+        display: block;
+
+
+    }
+
+}
+
+.contact-form__label{
+    margin-right: 18px;
+    display: inline-block;
+    width: 172px;
+    background: $color-main;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+
+    @include mq('sp'){
+        margin-bottom: 3px;
+        width: auto;
+        vertical-align: middle;
+        padding-left: 16px;
+        padding-right: 26px;
+    }
+
+    &::after{
+        content: "";
+        border-style: solid;
+        border-width: 20px 0 20px 8px;
+        border-color: transparent transparent transparent $color-main;
+        position: absolute;
+        top: 0;
+        right: -8px;
+
+        @include mq('sp'){
+            display: none;
+        }
+
+    }
+
+    label{
+        &.is-required{
+            display: inline-block;
+            position: relative;
+    
+            &::after{
+                content: "*";
+                width: 12px;
+                height: 12px;
+                color: #E7728E;
+                position: absolute;
+                top: 8px;
+                right: -12px;
+                line-height: 1;
+            }
+
+        }
+    }
+
+
+}
+
+.contact-form__input{}
+
+.contact-form-wrap{
+    display: inline-flex;
+    border: solid 1px #fff;
+    border-radius: 1px;
+}
+
+.contact-form-radio{
+    position: relative;   
+}
+
+.contact-form-radio-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    &:checked + .contact-form-part{
+        background: $color-main;
+        color: #fff;
+        border-radius: 1px;
+    }
+
+    &:focus + .contact-form-part{
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+}
+
+.contact-form-part{
+    display: block;
+    background: #fff;
+    color: $color-main;
+    height: 38px;
+    line-height: 38px;
+    width: 80px;
+    text-align: center;
+}
+
+.contact-form__check{
+    margin-top: 30px;
+    text-align: center;
+
+    @include mq('sp'){
+        margin-top: 24px;
+    }
+}
+
+.contact-privacy{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-privacy-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    &:checked + .contact-privacy-part{
+        width: 10px;
+        border-top: 0;
+        border-left: 0;
+        background: transparent;
+        transform: rotate(45deg);
+        top: -5px;        
+    }
+
+    &:focus + .contact-privacy-part{
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    &:checked:focus + .contact-privacy-part{
+        outline: none;
+    }
+
+}
+
+.contact-privacy-part{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $color-main;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.contact-privacy-link{
+    color: $color-main;
+    text-decoration: underline;
+}
+
+
+.contact-form__button{
+    margin-top: 50px;
+    text-align: center;
+
+    [type="submit"]{
+        width: 137px;
+        height: 46px;
+        background: #fff;
+        border: 1px solid $color-main;
+        color: $color-main;
+        letter-spacing: .1rem;
+    }
+
+    @include mq('sp'){
+        margin-top: 26px;
+    }
+}
