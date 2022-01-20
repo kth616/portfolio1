@@ -25,6 +25,7 @@
     display: block;
     width: calc(33% - 80px * 2 / 3);
     max-width: 340px;
+    margin: 0 auto;
 
     @include mq('pc'){
         &:not(:nth-child(4n+1)){

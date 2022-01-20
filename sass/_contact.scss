@@ -245,6 +245,13 @@
         border: 1px solid $color-main;
         color: $color-main;
         letter-spacing: .1rem;
+        transition: all 0.5s ease 0s;
+
+        &:hover{
+            color: #fff;
+            background: #3EA1D1;
+            cursor: pointer;
+        }
     }
 
     @include mq('sp'){

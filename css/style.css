@@ -612,6 +612,7 @@ header {
   display: block;
   width: calc(33% - 80px * 2 / 3);
   max-width: 340px;
+  margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
@@ -1282,6 +1283,14 @@ footer {
   border: 1px solid #3EA1D1;
   color: #3EA1D1;
   letter-spacing: .1rem;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.contact-form__button [type="submit"]:hover {
+  color: #fff;
+  background: #3EA1D1;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
