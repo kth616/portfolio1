@@ -42,7 +42,7 @@ $(document).ready(function () {
       statusCode: {
         0: function () {
           $(".end-message").slideDown();
-          $(".contact__form").fadeOut();
+          $(".contact-form").slideUp();
           //window.location.href = "thanks.html";
         },
         200: function () {

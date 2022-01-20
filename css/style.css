@@ -1301,9 +1301,13 @@ footer {
 
 .end-message {
   display: none;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .false-message {
   display: none;
+  text-align: center;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
