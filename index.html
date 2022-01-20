@@ -173,26 +173,26 @@
             <div class="section-title contact-title">Contact</div>
             <div class="contact-message"><span>＊</span>は入力必須項目です</div>
             <div class="contact__form">
-                <form class="contact-form" action="">
+                <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScUAon6hoJyQlymYAtt5dKn_sL7cJKeSeeeaDsICBnQwKlnwA/formResponse" id="form">
                     <dl class="contact-form__dl">
                         <div class="contact-form__row">
                             <dt class="contact-form__label"><label for="your-name" class="is-required">お名前</label></dt>
-                            <dd class="contact-form__input"><input id="your-name" type="text" placeholder="坂本　太郎" required></dd>
+                            <dd class="contact-form__input"><input name="entry.621368823" id="your-name" type="text" placeholder="坂本　太郎" required></dd>
                         </div>
                         <div class="contact-form__row">
                             <dt class="contact-form__label"><label for="your-email" class="is-required">メールアドレス</label></dt>
-                            <dd class="contact-form__input"><input id="your-email" type="email" placeholder="text@example.com" required></dd>
+                            <dd class="contact-form__input"><input name="entry.1745072768" id="your-email" type="email" placeholder="text@example.com" required></dd>
                         </div>
                         <div class="contact-form__row">
                             <dt class="contact-form__label"><label for="your-type" class="is-required">法人／個人の選択</label></dt>
                             <dd class="contct-form__input">
                                 <div class="contact-form-wrap">
                                     <label class="contact-form-radio">
-                                        <input type="radio" name="" class="contact-form-radio-input" required checked>
+                                        <input id="your-type" type="radio" name="entry.1691276471" class="contact-form-radio-input" value="法人" required checked>
                                         <span class="contact-form-part">法人</span>
                                     </label>
                                     <label class="contact-form-radio">
-                                        <input type="radio" name="" class="contact-form-radio-input" required>
+                                        <input id="your-type" type="radio" name="entry.1691276471" class="contact-form-radio-input" value="個人" required>
                                         <span class="contact-form-part">個人</span>
                                     </label>
                                 </div>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="contact-form__row">
                             <dt class="contact-form__label"><label for="your-message" class="is-required">お問い合わせ内容</label></dt>
-                            <dd class="contact-form__input"><textarea name="" id="your-message" placeholder="お問い合わせを入力してください" required></textarea></dd>
+                            <dd class="contact-form__input"><textarea name="entry.94606583" id="your-message" placeholder="お問い合わせを入力してください" required></textarea></dd>
                         </div>
                     </dl>
                     <div class="contact-form__check">
@@ -214,6 +214,8 @@
                         <input type="submit" value="送信する">
                     </div>
                 </form>
+                <p class="end-message">お問い合わせありがとうございました</p>
+                <p class="false-message">送信失敗です</p>
             </div>
         </div>
     </section>

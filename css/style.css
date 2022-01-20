@@ -1289,4 +1289,12 @@ footer {
     margin-top: 26px;
   }
 }
+
+.end-message {
+  display: none;
+}
+
+.false-message {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
